@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Currency Converter 💱</h1>
+        <div class="dark-mode">
+          <li></li>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="mid-header">
+          <label for="write">From</label>
+          <label for="Currency">Currency Type</label>
+        </div>
+        <div class="mid-footer">
+          <input type="number" id="write" placeholder="0" />
+          <select name="Currency" id="Currency">
+            <option value="INR">INR</option>
+          </select>
+        </div>
+      </div>
+      <div class="mid1">
+        <div class="mid1-header">
+          <label for="read">To</label>
+          <label for="toCurrency">Currency Type</label>
+        </div>
+        <div class="mid1-footer">
+          <input type="number" id="read" value="0" readonly />
+          <select name="Currency1" id="toCurrency">
+            <option value="USD">USD</option>
+          </select>
+        </div>
+      </div>
+      <button>Convert INR to USD</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
