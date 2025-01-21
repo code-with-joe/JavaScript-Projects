@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", serif;
+    color: #121212;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+  }
+  .container{
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  input{
+    width: 330px;
+    height: 45px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 12px;
+    transition: all 0.7s ease;
+  }
+ 
+  .button-layout{
+    display: flex;
+  }
+  .button-col-1,  .button-col-2,  .button-col-3,  .button-col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 7px;
+  }
+
+  button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.8s ease;
+  }
+  button:active{
+    transform: scale(0.9);
+  }
+  .button-col-4 button{
+    background-color: #adadad;
+  }
+  .button-col-4 button:last-child{
+    background-color: rgb(255, 84, 21);
+  }
+  .button-col-1 :first-child, .button-col-2 :first-child, .button-col-3 :first-child{
+    background-color: #adadad;
+  }
+
+
+
+
