@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <div class="header">
+        <i class="ri-arrow-down-s-line"></i>
+        <div class="lyric-sec">
+          <button class="cover">COVER</button>
+          <button class="lyric">LYRIC</button>
+        </div>
+        <i class="ri-more-2-fill"></i>
+      </div>
+      <div class="song-banner">
+        <div class="image">
+          <h2>No Lyrics Yet</h2>
+          <img src="./Images/Banner.jpeg" alt="Song Banner" />
+        </div>
+      </div>
+      <div class="song-dis">
+        <h1>KU LO SA</h1>
+        <p>Oxlade</p>
+        <i class="ri-poker-hearts-line" id="fav"></i>
+      </div>
+      <div class="song-timer">
+        <h4>00:00</h4>
+
+        <div class="line">
+          <div class="line-outer"></div>
+        </div>
+
+        <div class="line2"></div>
+        <div class="circle"></div>
+        <h5>00:00</h5>
+      </div>
+      <div class="footer">
+        <h3></h3>
+        <i class="ri-repeat-one-fill"></i>
+        <i class="ri-skip-left-fill"></i>
+        <div class="play-icon">
+          <i class="ri-play-large-fill" id="play-stop"></i>
+        </div>
+        <i class="ri-skip-right-fill"></i>
+        <i class="ri-play-list-2-line"></i>
+      </div>
+
+      <audio controls>
+        <source src="C:\Users\Aman\Downloads\KULOSA.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
